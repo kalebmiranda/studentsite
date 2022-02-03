@@ -2,7 +2,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Arial, sans-serif;
     background: rgb(136, 95, 95);
     margin: 0;  
-    display: -ms-grid;
+    display: grid;
     align-content: center;
     min-height: 100vh;
  }
