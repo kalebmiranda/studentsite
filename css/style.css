@@ -18,7 +18,7 @@ h2 {
 }
 
 p {
-    color: white;
+    color: rgb(0, 0, 0);
     max-width: 30em;
     margin: 0 auto;
 }
