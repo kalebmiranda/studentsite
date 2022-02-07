@@ -52,3 +52,21 @@ header a:hover {
 main {
   background: rgba(224, 224, 224, 0.05);
 }
+/* FOOTER */
+footer {
+  border-top: 1px solid rgba(0,0,0,.05);
+  padding: 1em;
+}
+/* SOCIAL NAV */
+.social-nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.social-nav  a {
+  display: block;
+  padding: 1em;
+}
