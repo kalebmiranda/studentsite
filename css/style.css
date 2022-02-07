@@ -48,3 +48,7 @@ header a:hover {
     display: block;
     padding: 1em;
 }
+/* SITE ID */
+.site-id h1 {
+  margin: 0;
+}
