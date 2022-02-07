@@ -15,8 +15,8 @@ body {
   }
   /* HEADER */
 header {
-  background-color: rgb(238, 248, 144);
-  color: rgba(0, 0, 0, 0.8); 
+  background-color: rgb(133, 204, 0);
+  color: rgba(255, 255, 255, 0.8); 
   padding: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -29,7 +29,7 @@ header a {
 }
 
 header a:hover {
-  color: rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 1);
 }
 /* SITE ID */
 .site-id h1 {
