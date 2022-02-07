@@ -89,3 +89,19 @@ footer {
   max-width: 30em;
   margin: 1em auto;
 }
+/* COURSES SECTION */
+.courses {
+  padding: 6em 1em;
+  display: grid;
+  justify-content: center;
+}
+
+.courses ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.courses h3 {
+  text-align: center;
+}
