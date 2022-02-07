@@ -37,18 +37,14 @@ header a:hover {
 }
 /* SITE NAV */
 .site-nav ul {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .site-nav  a {
-  display: block;
-  padding: 1em;
-}
-/* MAIN */
-main {
-  background: rgba(0,0,0,.05);
+    display: block;
+    padding: 1em;
 }
