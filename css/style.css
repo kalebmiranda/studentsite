@@ -19,7 +19,7 @@ header {
   color: rgba(255, 255, 255, 0.8); 
   padding: 1em;
   display: grid;
-  grid-template-columns: 90%, 10%;
+  grid-template-columns: 10%, 90%;
   align-items: center;
 }
 
