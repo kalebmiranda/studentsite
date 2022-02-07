@@ -35,3 +35,16 @@ header a:hover {
 .site-id h1 {
   margin: 0;
 }
+/* SITE NAV */
+.site-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav  a {
+  display: block;
+  padding: 1em;
+}
