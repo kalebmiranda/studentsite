@@ -31,3 +31,7 @@ header a {
 header a:hover {
   color: rgba(255, 255, 255, 1);
 }
+/* SITE ID */
+.site-id h1 {
+  margin: 0;
+}
