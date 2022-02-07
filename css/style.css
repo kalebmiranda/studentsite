@@ -15,7 +15,7 @@ body {
   }
   /* HEADER */
 header {
-  background-color: rgba(0, 102, 204, 1);
+  background-color: rgb(238, 248, 144);
   color: rgba(0, 0, 0, 0.8); 
   padding: 1em;
   display: grid;
@@ -47,8 +47,4 @@ header a:hover {
 .site-nav  a {
     display: block;
     padding: 1em;
-}
-/* SITE ID */
-.site-id h1 {
-  margin: 0;
 }
