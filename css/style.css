@@ -72,13 +72,14 @@ footer {
 }
 /* HERO SECTION */
 .hero {
-  background-color: rgba(0, 102, 204, 1);
+  background-color: rgb(80, 149, 209);
+  background-image: url(../img/kauaiimage.jpeg);
   text-align: center;
   color: white;
   padding: 6em 1em;
 }
 
-.hero h2 {
+.hero h1 {
   font-size: 6em;
   line-height: 1;
   text-transform: uppercase;
@@ -102,6 +103,6 @@ footer {
   list-style: none;
 }
 
-.courses h3 {
+.courses h2 {
   text-align: center;
 }
