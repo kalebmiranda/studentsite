@@ -17,7 +17,7 @@ body {
 header {
   background-color: rgb(236, 238, 119);
   color: rgba(0, 0, 0, 0.8); 
-  padding: 1em;
+  padding: .5em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
