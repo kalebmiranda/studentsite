@@ -4,8 +4,8 @@ body { margin: 0; }
 
 /* GLOBAL COLORS */
 body { color: rgba(0, 0, 0, 0.8); }
-a { color: rgba(0, 102, 204, 1); }
-a:hover { color: rgba(0, 51, 153, 1); }
+a { color: rgb(0, 0, 0); }
+a:hover { color: rgb(236, 238, 119); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
@@ -103,7 +103,7 @@ aside {
   background-image: url(../img/bwshroomleaf.jpeg);
   text-align: center;
   color: white;
-  padding: 6em 1em;
+  padding: 9em 1em;
 }
 
 .hero h1 {
