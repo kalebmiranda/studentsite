@@ -35,22 +35,86 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: rgb(0, 0, 0);
-    font-size: 87.5%; /* 14px */
+    font-size: 87.5%; /* 16px = 1em */
     line-height: 1.4;
     /* 14px x 1.5em = 21px */
   }
 
-  /* #HEADINGS */
+/* #HEADINGS */
 /*
     Based on a Traditional Typographic Scale
     48, 36, 24, 21, 18, 16
 */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+h1, h2, h3, h4, h5, h6 {
+    margin: .5em 0;
+h1 {
+    font-size: 3em;
+    /* 48px */
+    line-height: 1;
+}
+
+h2  {
+    font-size: 2.25em;
+    /* 36px */
+    line-height: 1.1;
+}
+
+h3  {
+    font-size: 1.5em;
+    /* 24px */
+    line-height: 1.2;
+}
+h4  {
+    font-size: 1.3125em;
+    /* 21px */
+    line-height: 1.3;
+}
+
+h5  {
+    font-size: 1.125em;
+    /* 18px */
+    line-height: 1.4;
+}
+
+h6  {
+    font-size: 1em;
+    /* 16px */
+    line-height: 1;
+}
+
+/* #PARAGRAPHS */
+p {
+    margin: .5em 0;
+    max-width: 38em;
+  }
+
+/* #LINKS */
+a {
+    color: rgb(21, 50, 78);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(41, 41, 122);
+    text-decoration: underline;
+  }
+
+/* HELPER CLASSES */
+.text-centered {
+    text-align: center;
+}
+.full-width {
+    max-width: none;
+    width: 100%;
+}
+.horiz-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
   font-family: Helvetica, Arial, sans-serif;
   margin: 0.5em 0;
 }
