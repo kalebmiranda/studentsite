@@ -27,3 +27,41 @@
         #SITE NAVIGATION
             #TOGGLE-NAV (Default for Small Screens)
 --------------------------------- */
+
+
+/* #TYPOGRAPHY  */
+
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 87.5%; /* 14px */
+    line-height: 1.4;
+    /* 14px x 1.5em = 21px */
+  }
+
+  /* #HEADINGS */
+/*
+    Based on a Traditional Typographic Scale
+    48, 36, 24, 21, 18, 16
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0.5em 0;
+}
+
+/* Reference
+	62.5%  => 10px
+	68.8%  => 11px
+	75%    => 12px
+	81.3%  => 13px
+	87.5%  => 14px
+	100%   => 16px
+	112.5% => 18px
+	125%   => 20px
+*/
