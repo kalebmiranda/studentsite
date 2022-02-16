@@ -113,6 +113,35 @@ a {
     margin-right: auto;
 }
 
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* #BUTTONS */
+.button {
+        background-color: blue;
+        color: white;
+        padding: 1em;
+  }
+
+  .button:hover {
+  background-color: rgb(27, 27, 158);
+  border-color:  rgb(27, 27, 158);
+  color: #fff;
+  text-decoration: none;
+}
+
+a.button.alt {
+  background-color: transparent;
+  color: #036;
+}
+
+.button.alt:hover {
+background-color:  rgb(27, 27, 158);
+color: white
+}
 
 
   font-family: Helvetica, Arial, sans-serif;
