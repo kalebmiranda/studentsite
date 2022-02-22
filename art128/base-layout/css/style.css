@@ -1,0 +1,229 @@
+/* #BASE CSS (Initital Setup)
+---------------------------------
+    #BASE CONTENT
+        #TYPOGRAPHY
+            #BODY
+            #HEADINGS
+            #PARAGRAPHS
+            #LINKS
+            #HELPERS
+        #MEDIA
+            #IMAGES
+        #COMPONENTS
+            #BUTTONS
+    #BASE LAYOUT
+        #SIMPLE RESET
+        #MEDIAQUERIES
+        #CONTAINER
+        #GRID SYSTEM
+            #CLEARFIX
+    #BASE SITE
+        #SITE STRUCTURE
+            #HEADER
+                # site-id (LOGO)
+            #FOOTER
+            #SECTIONS
+            #SUB PAGES
+        #SITE NAVIGATION
+            #TOGGLE-NAV (Default for Small Screens)
+--------------------------------- */
+
+
+/* #TYPOGRAPHY  */
+
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 87.5%; /* 16px = 1em */
+    line-height: 1.4;
+    /* 14px x 1.5em = 21px */
+  }
+
+/* #HEADINGS */
+/*
+    Based on a Traditional Typographic Scale
+    48, 36, 24, 21, 18, 16
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    margin: .5em 0;
+h1 {
+    font-size: 3em;
+    /* 48px */
+    line-height: 1;
+}
+
+h2  {
+    font-size: 2.25em;
+    /* 36px */
+    line-height: 1.1;
+}
+
+h3  {
+    font-size: 1.5em;
+    /* 24px */
+    line-height: 1.2;
+}
+h4  {
+    font-size: 1.3125em;
+    /* 21px */
+    line-height: 1.3;
+}
+
+h5  {
+    font-size: 1.125em;
+    /* 18px */
+    line-height: 1.4;
+}
+
+h6  {
+    font-size: 1em;
+    /* 16px */
+    line-height: 1;
+}
+
+/* #PARAGRAPHS */
+p {
+    margin: .5em 0;
+    max-width: 38em;
+  }
+
+/* #LINKS */
+a {
+    color: rgb(21, 50, 78);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(41, 41, 122);
+    text-decoration: underline;
+  }
+
+/* HELPER CLASSES */
+.text-centered {
+    text-align: center;
+}
+.full-width {
+    max-width: none;
+    width: 100%;
+}
+.horiz-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* #BUTTONS */
+.button {
+        background-color: blue;
+        color: white;
+        padding: 1em;
+  }
+
+  .button:hover {
+  background-color: rgb(27, 27, 158);
+  border-color:  rgb(27, 27, 158);
+  color: #fff;
+  text-decoration: none;
+}
+
+a.button.alt {
+  background-color: transparent;
+  color: #036;
+}
+
+.button.alt:hover {
+background-color:  rgb(27, 27, 158);
+color: white
+}
+
+
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0.5em 0;
+}
+
+/* Reference
+	62.5%  => 10px
+	68.8%  => 11px
+	75%    => 12px
+	81.3%  => 13px
+	87.5%  => 14px
+	100%   => 16px
+	112.5% => 18px
+	125%   => 20px
+*/
+
+/* LAYOUT */
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+  
+ /* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4%;
+  }
+
+  /* MEDIA QUERIES */
+  @media (min-width: 768px) {
+     /* TABLET SIZED STYLING GOES HERE */
+  }
+
+    @media (min-width: 1050px) {
+        body {
+            font-size: 100%; /* 16px */
+        }
+        .container { 
+        }
+    }
+
+    @media (min-width: 1250px) {
+        body {
+            font-size: 112.5%; /* 18px */
+        }
+        .container { 
+            max-width: 1200;
+        }
+    }
+
+    /* FOR DEMO PURPOSES ONLY */
+    body.demo {
+        padding-top: 2em;
+    }
+    body.demo:after {
+        content: "Small Screen (Mobile) Less Than 768px";
+        background-color: #933;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        text-align: center;
+        color: white;
+        padding: .5em;
+    }
+
+    @media (min-width: 768px) {
+        body.demo::before {
+            background-color: #bcb83d;
+            content: "Midsize (Tablet) Screen 768 - 1050px";
+        }
+    }
+
+    @media (min-width: 1050px) {
+        body.demo::before {
+            background-color: #693;
+            content: "Large (Notebook) Screen 1050 - 1250px";
+         }
+    }
+    @media (min-width: 1250px) {
+        body.demo::before {
+            background-color: #89c;
+            content: "Extra Large (Desktop) Screen 1250px +";
+         }
+    }
