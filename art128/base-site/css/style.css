@@ -289,6 +289,36 @@ body { margin: 0; }
         background-color: rgba(255,0,0,.2);
     }
 
+    /* STYLING FOR BOTH HEADER AND FOOTER */
+    .site-header a,
+    .site-footer a {
+        color: rgba(0,0,0,.8);
+    }
+
+    .site-header a:hover {
+        color: rgba(0,0,0,1);
+        text-decoration: none;
+    }
+
+    /* LOGO AREA */
+    .site-id h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+    /* SITE NAV */
+    .site-nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .site-nav li {
+        background-color: rgba(0,255,255,.2);
+        border: 1px solid green;
+    }
+    
     /* SITE MAIN */
     .site-main {
         background-color: rgba(0,255,0,.2);
@@ -298,7 +328,11 @@ body { margin: 0; }
     .site-footer {
         background-color: rgba(0,0,255,.2);
     }
-
+    .site-header b {
+        color: rgba(0,0,0,.8);
+    }
+    
+    /* HERO */
     .hero {
         background-color: rgba(255,255,.2);
     }
