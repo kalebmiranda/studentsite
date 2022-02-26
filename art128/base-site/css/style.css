@@ -289,21 +289,33 @@ body { margin: 0; }
         background-color: rgba(255,0,0,.2);
     }
 
+    /* .site-header .container {
+        display: flex; 
+        justify-content: space-between; */
+    }
+
     /* STYLING FOR BOTH HEADER AND FOOTER */
     .site-header a,
     .site-footer a {
         color: rgba(0,0,0,.8);
     }
 
-    .site-header a:hover {
+    .site-header a:hover,
+    .site-footer a:hover{
         color: rgba(0,0,0,1);
         text-decoration: none;
     }
 
     /* LOGO AREA */
+    .site-id {
+        background-color: rgba(0,0,255,.2);
+        border: 1px solid green;
+
+    }
     .site-id h1 {
         font-size: 1.5em;
         margin: 0;
+        text-align: center;
     }
     /* SITE NAV */
     .site-nav ul {
@@ -317,6 +329,11 @@ body { margin: 0; }
     .site-nav li {
         background-color: rgba(0,255,255,.2);
         border: 1px solid green;
+    }
+
+    .site-nav a  {
+        display: block;
+        padding: 1em; 
     }
     
     /* SITE MAIN */
