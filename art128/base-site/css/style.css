@@ -159,6 +159,40 @@ color: white
 	125%   => 20px
 */
 
+/* #BUTTONS */
+.button,
+button {
+    font-size: inherit;
+    line-height: 1;
+    background-color: rgba(0,0,255,1);
+    border: 1px solid rgba(0,0,255,1);
+    color: rgba(255,255,255,1);
+    padding: 1em;
+    display:inline-block;
+    margin: .5em;
+    text-align: center;
+    border-radius: 0.5em;
+    
+}
+  
+button:hover,
+a.button:hover {
+    background-color: rgba(0,0,153,1);
+    border-color: rgba(0,0,153,1);
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+}
+
+.button.alt {
+    background-color: transparent;
+    color: rbga(0,0,153,1);
+}
+
+.button.alt:hover {
+    background-color: rgba(0,0,153,1);
+    color: rgba (255,255,255,1);
+}
+
 /* LAYOUT */
 
 * { box-sizing: border-box; }
@@ -281,17 +315,16 @@ body { margin: 0; }
 
     /* SITE STRUCTURE */
     
-    .container {
-        border: 2px solid red
-    }
+    
     /* SITE HEADER */
     .site-header {
-        background-color: rgba(255,0,0,.2);
+        padding: 1em;
     }
-
-    /* .site-header .container {
-        display: flex; 
-        justify-content: space-between; */
+    /* ON LARGER SCREENS PLACE LOGO LEFT AND NAV RIGHT */
+    @media (min-width: 768px) {
+        .site-header .container {
+            display: flex; 
+            justify-content: space-between; 
     }
 
     /* STYLING FOR BOTH HEADER AND FOOTER */
@@ -307,14 +340,11 @@ body { margin: 0; }
     }
 
     /* LOGO AREA */
-    .site-id {
-        background-color: rgba(0,0,255,.2);
-        border: 1px solid green;
-
-    }
+    
     .site-id h1 {
         font-size: 1.5em;
         margin: 0;
+        padding-top: .55em;
         text-align: center;
     }
     /* SITE NAV */
@@ -326,30 +356,26 @@ body { margin: 0; }
         justify-content: center;
     }
 
-    .site-nav li {
-        background-color: rgba(0,255,255,.2);
-        border: 1px solid green;
-    }
-
     .site-nav a  {
         display: block;
         padding: 1em; 
     }
     
-    /* SITE MAIN */
-    .site-main {
-        background-color: rgba(0,255,0,.2);
-    }
-
-    /* SITE FOOTER */
-    .site-footer {
-        background-color: rgba(0,0,255,.2);
-    }
-    .site-header b {
-        color: rgba(0,0,0,.8);
+    /* SECTIONS */
+    sections {
+        padding: 3em 0;
     }
     
     /* HERO */
     .hero {
-        background-color: rgba(255,255,.2);
+        padding: 6em 4%;
+        background-color: rgba(0,0,0,.1);
+        text-align: center;
     }
+
+    .hero h1, p {
+        max-width: 10em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
