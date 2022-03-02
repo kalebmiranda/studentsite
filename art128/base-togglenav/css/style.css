@@ -360,6 +360,10 @@ body { margin: 0; }
         display: block;
         padding: 1em; 
     }
+
+    .site-nav .menu-button {
+        display: none;
+    }
     
     /* SECTIONS */
     sections {
@@ -380,3 +384,25 @@ body { margin: 0; }
     }
     
     /* TOGGLE NAV */
+
+    @media (max-width: 767px) {
+        .toggle-nav .site-id {
+            position: absolute; 
+        }
+        .toggle-nav .site-nav {
+            text-align: right;
+        }
+        .toggle-nav .site-nav .menu-button {
+            display: block;
+            background: pink;
+            display: inline-block;
+            cursor: pointer;
+            padding: .5em 1em;
+            border: 1px solid black;
+
+        }
+        .toggle-nav .site-nav ul {
+            display: block;
+            text-align: center;
+        }
+
