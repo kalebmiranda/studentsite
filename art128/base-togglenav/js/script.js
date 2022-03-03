@@ -1,5 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    //JAVASCRIPT FUNCTIONS GO HERE
-    console.log('Javascript is ready');
-})
+    //TOGGLE NAV MOBILE MENU FOR SMALL SCREENS
+    const menubutton = document.querySelector('.menu-botton');
+    const menunav = document.querySelector(''.toggle-nav');
+    menubutton.addEventListener("click", funtion(){
+        if (menunav.getAttribute('data-navstate') === 'open') {
+            // if true do this
+            menunav.setAttribute('data-navstate', 'closed');
+        } else {
+            // else (if false) do this:
+            menunav.setAttribute('data-navstate', 'open');
+        );
+        }
+
+    });
+    console.log(menunav);
+});
