@@ -38,7 +38,7 @@ body {
     font-size: 87.5%; /* 16px = 1em */
     line-height: 1.4;
     /* 14px x 1.5em = 21px */
-  }
+}
 
 /* #HEADINGS */
 /*
@@ -48,6 +48,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin: .5em 0;
+}
+
 h1 {
     font-size: 3em;
     /* 48px */
@@ -65,6 +67,7 @@ h3  {
     /* 24px */
     line-height: 1.2;
 }
+
 h4  {
     font-size: 1.3125em;
     /* 21px */
@@ -87,18 +90,18 @@ h6  {
 p {
     margin: .5em 0;
     max-width: 38em;
-  }
+}
 
 /* #LINKS */
 a {
     color: rgb(21, 50, 78);
     text-decoration: none;
-  }
+}
   
-  a:hover {
+a:hover {
     color: rgb(41, 41, 122);
     text-decoration: underline;
-  }
+}
 
 /* HELPER CLASSES */
 .text-centered {
@@ -121,43 +124,27 @@ img {
 
 /* #BUTTONS */
 .button {
-        background-color: blue;
-        color: white;
-        padding: 1em;
-  }
+    background-color: blue;
+    color: white;
+    padding: 1em;
+}
 
-  .button:hover {
-  background-color: rgb(27, 27, 158);
-  border-color:  rgb(27, 27, 158);
-  color: #fff;
-  text-decoration: none;
+.button:hover {
+    background-color: rgb(27, 27, 158);
+    border-color: rgb(27, 27, 158);
+    color: #fff;
+    text-decoration: none;
 }
 
 a.button.alt {
-  background-color: transparent;
-  color: #036;
+    background-color: transparent;
+    color: #036;
 }
 
 .button.alt:hover {
-background-color:  rgb(27, 27, 158);
-color: white
+    background-color: rgb(27, 27, 158);
+    color: white;
 }
-
-
-  font-family: Helvetica, Arial, sans-serif;
-  margin: 0.5em 0;
-}
-
-/* Reference
-	62.5%  => 10px
-	68.8%  => 11px
-	75%    => 12px
-	81.3%  => 13px
-	87.5%  => 14px
-	100%   => 16px
-	112.5% => 18px
-	125%   => 20px
-*/
 
 /* #BUTTONS */
 .button,
@@ -190,7 +177,7 @@ a.button:hover {
 
 .button.alt:hover {
     background-color: rgba(0,0,153,1);
-    color: rgba (255,255,255,1);
+    color: rgba(255,255,255,1);
 }
 
 /* LAYOUT */
@@ -203,78 +190,78 @@ body { margin: 0; }
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 4%;
-  }
+}
 
-  /* MEDIA QUERIES */
-  @media (min-width: 768px) {
-     /* TABLET SIZED STYLING GOES HERE */
-  }
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+    /* TABLET SIZED STYLING GOES HERE */
+}
 
-    @media (min-width: 1050px) {
-        body {
-            font-size: 100%; /* 16px */
-        }
-        .container { 
-        }
+@media (min-width: 1050px) {
+    body {
+        font-size: 100%; /* 16px */
     }
-
-    @media (min-width: 1250px) {
-        body {
-            font-size: 112.5%; /* 18px */
-        }
-        .container { 
-            max-width: 1200;
-        }
+    .container { 
     }
+}
 
-    /* FOR DEMO PURPOSES ONLY */
-    body.demo {
-        padding-top: 2em;
+@media (min-width: 1250px) {
+    body {
+        font-size: 112.5%; /* 18px */
     }
-    body.demo:after {
-        content: "Small Screen (Mobile) Less Than 768px";
-        background-color: #933;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        text-align: center;
-        color: white;
-        padding: .5em;
+    .container { 
+        max-width: 1200;
     }
+}
 
-    @media (min-width: 768px) {
-        body.demo::before {
-            background-color: #bcb83d;
-            content: "Midsize (Tablet) Screen 768 - 1050px";
-        }
+/* FOR DEMO PURPOSES ONLY */
+body.demo {
+    padding-top: 2em;
+}
+body.demo:after {
+    content: "Small Screen (Mobile) Less Than 768px";
+    background-color: #933;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    color: white;
+    padding: .5em;
+}
+
+@media (min-width: 768px) {
+    body.demo::before {
+        background-color: #bcb83d;
+        content: "Midsize (Tablet) Screen 768 - 1050px";
     }
+}
 
-    @media (min-width: 1050px) {
-        body.demo::before {
-            background-color: #693;
-            content: "Large (Notebook) Screen 1050 - 1250px";
-         }
+@media (min-width: 1050px) {
+    body.demo::before {
+        background-color: #693;
+        content: "Large (Notebook) Screen 1050 - 1250px";
     }
-    @media (min-width: 1250px) {
-        body.demo::before {
-            background-color: #89c;
-            content: "Extra Large (Desktop) Screen 1250px +";
-         }
+}
+@media (min-width: 1250px) {
+    body.demo::before {
+        background-color: #89c;
+        content: "Extra Large (Desktop) Screen 1250px +";
     }
+}
 
-    /* SEMANTIC GRID SYSTEM */
+/* SEMANTIC GRID SYSTEM */
 
-    .row > .column {
-        margin-bottom: 2%;
-    }
+.row > .column {
+    margin-bottom: 2%;
+}
 
-    @media (min-width: 768px) {
+@media (min-width: 768px) {
 
-        .row {
-            display: flex;
-            justify-content: space-between;
-            margin-left: -1%;
-            margin-right: -1%;
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -1%;
+        margin-right: -1%;
     }
 
     .row > .column {
@@ -306,134 +293,138 @@ body { margin: 0; }
 
 }
 
-    /* FOR DEMO PURPOSES ONLY */
-    .demo .column {
-        background: rgba(0,0,0,.2);
-        padding: 1em;
-        text-align: center;
-    }
+/* FOR DEMO PURPOSES ONLY */
+.demo .column {
+    background: rgba(0,0,0,.2);
+    padding: 1em;
+    text-align: center;
+}
 
-    /* SITE STRUCTURE */
+/* SITE STRUCTURE */
+
+
+/* SITE HEADER */
+.site-header {
+    padding: 1em;
+}
+/* ON LARGER SCREENS PLACE LOGO LEFT AND NAV RIGHT */
+@media (min-width: 768px) {
+    .site-header .container {
+        display: flex; 
+        justify-content: space-between; 
+    }
+}
+
+/* STYLING FOR BOTH HEADER AND FOOTER */
+.site-header a,
+.site-footer a {
+    color: rgba(0,0,0,.8);
+}
+
+.site-header a:hover,
+.site-footer a:hover{
+    color: rgba(0,0,0,1);
+    text-decoration: none;
+}
+
+/* LOGO AREA */
+
+.site-id h1 {
+    font-size: 1.5em;
+    margin: 0;
+    padding-top: .55em;
+    text-align: center;
+}
+/* SITE NAV */
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.site-nav a  {
+    display: block;
+    padding: 1em; 
+}
+
+/* SECTIONS */
+sections {
+    padding: 3em 0;
+}
+
+/* HERO */
+.hero {
+    padding: 6em 4%;
+    background-color: rgba(0,0,0,.1);
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.hero h1, .hero p {
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
     
-    
-    /* SITE HEADER */
-    .site-header {
-        padding: 1em;
-    }
-    /* ON LARGER SCREENS PLACE LOGO LEFT AND NAV RIGHT */
-    @media (min-width: 768px) {
-        .site-header .container {
-            display: flex; 
-            justify-content: space-between; 
-    }
+/* TOGGLE NAV */
 
-    /* STYLING FOR BOTH HEADER AND FOOTER */
-    .site-header a,
-    .site-footer a {
-        color: rgba(0,0,0,.8);
-    }
+.toggle-nav .site-nav .menu-button {
+    display: none;
+}
 
-    .site-header a:hover,
-    .site-footer a:hover{
-        color: rgba(0,0,0,1);
-        text-decoration: none;
+@media (max-width: 767px) {
+    .toggle-nav .site-id {
+        position: absolute; 
     }
-
-    /* LOGO AREA */
-    
-    .site-id h1 {
-        font-size: 1.5em;
-        margin: 0;
-        padding-top: .55em;
-        text-align: center;
+    .toggle-nav .site-nav {
+        text-align: right;
     }
-    /* SITE NAV */
-    .site-nav ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        justify-content: center;
-    }
-
-    .site-nav a  {
+    .toggle-nav .site-nav .menu-button {
         display: block;
-        padding: 1em; 
+        background: pink;
+        display: inline-block;
+        cursor: pointer;
+        padding: .3em .8em;
+        margin-bottom: .8em;
+        border: 1px solid black;
+
+    }
+    .toggle-nav .site-nav .menu-button::selection {
+        background-color: rgba(255,255,255,0);
     }
 
-    .site-nav .menu-button {
-        display: none;
+    .toggle-nav .site-nav a:hover {
+        background-color: rgba(0,0,153,1);
+        color: white;
     }
-    
-    /* SECTIONS */
-    sections {
-        padding: 3em 0;
+    .toggle-nav[data-navstate="closed"] ul {
+        height: 0;
+        overflow: hidden;
     }
-    
-    /* HERO */
-    .hero {
-        padding: 6em 4%;
-        background-color: rgba(0,0,0,.1);
-        text-align: center;
+    .toggle-nav[data-navstate="open"] ul {
+        height: auto;
+        overflow: visible;
     }
 
-    .hero h1, p {
-        max-width: 10em;
-        margin-left: auto;
-        margin-right: auto;
+    /* NAVICON */
+    .toggle-nav .site-nav .menubutton.naveicon {
+        border: none;
+        color: rgba(255,255,255,0);
     }
-    
-    /* TOGGLE NAV */
+    .toggle-nav .site-nav .menubutton.naveicon::after {
+        content: "\2630";
+        display: inline-block;
+        padding: 0 .4em;
+        margin: 0;
+        color: rgba(0,0,0,.8);
+        font-size: 1.5em;
+    }
 
-    @media (max-width: 767px) {
-        .toggle-nav .site-id {
-            position: absolute; 
-        }
-        .toggle-nav .site-nav {
-            text-align: right;
-        }
-        .toggle-nav .site-nav .menu-button {
-            display: block;
-            background: pink;
-            display: inline-block;
-            cursor: pointer;
-            padding: .3em .8em;
-            margin-bottom: .8em;
-            border: 1px solid black;
-
-        }
-        .toggle-nav .site-nav .menu-button: ::selection {
-            background-color: rgba(255,255,255,0);
-        }
-
-        .toggle-nav .site-nav a:hover {
-            background-color: rgba(0,0,153,1);
-            color: white;
-        }
-        .toggle-nav[data-navstate="closed"] ul {
-            height: 0;
-            overflow: hidden;
-        }
-        .toggle-nav[data-navstate="open"] ul {
-            height: auto;
-            overflow: visible;
-        }
-
-        /* NAVICON */
-        .toggle-nav .site-nav .menubutton.naveicon {
-            border: none;
-            color: rgba(255,255,255,0);
-        }
-        .toggle-nav .site-nav .menubutton.naveicon::after {
-            content: "\2630";
-            display: inline-block;
-            padding: 0 .4em;
-            margin: 0;
-            color: rgba(0,0,0,.8);
-            font-size: 1.5em;
-        }
-
-        .toggle-nav[data-navstate="open"] .toggle-nav .site-nav .menubutton.naveicon::after {
-            content: "\2715";
-        }
- 
+    .toggle-nav[data-navstate="open"] .toggle-nav .site-nav .menubutton.naveicon::after {
+        content: "\2715";
+    }
+}
