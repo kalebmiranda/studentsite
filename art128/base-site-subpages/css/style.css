@@ -6,6 +6,7 @@
             #HEADINGS
             #PARAGRAPHS
             #LINKS
+            #LISTS
             #HELPERS
         #MEDIA
             #IMAGES
@@ -446,4 +447,60 @@ sections {
     .toggle-nav[data-navstate="open"] .toggle-nav .site-nav .menubutton.naveicon::after {
         content: "\2715";
     }
+}
+
+/* SUB PAGES */
+
+article {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article h1, 
+article h1 + .subhead,
+article .date {
+    text-align: center;
+}
+
+article h2.subhead {
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+
+article .subhead {
+    font-weight: normal;
+    opacity: .7;
+}
+
+article .date {
+    font-size: .75em;
+    opacity: .5;
+    margin-bottom: 3em;
+}
+
+article p + h1,
+article p + h2,
+article p + h3,
+article p + h4,
+article p + h5,
+article p + h6 {
+    margin-top: 1.5em;
+}
+
+/*
+article p:first-of-type {
+    font-size: 1.4em;
+    line-height: 1.3;
+}*/
+
+
+article p:first-of-type: first-letter {
+    font-size: 3em;
+    line-height: 1em;
+    background: #000;
+    color: #fff;
+    padding: .2em .4em;
+    margin-right: .3em;
+    float: left;
 }
