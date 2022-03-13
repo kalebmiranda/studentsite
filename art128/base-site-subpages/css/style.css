@@ -130,7 +130,9 @@ img {
     padding: 1em;
 }
 
-.button:hover {
+.button:hover,
+a.button:hover,
+form input [type=submit]:hover {
     background-color: rgb(27, 27, 158);
     border-color: rgb(27, 27, 158);
     color: #fff;
@@ -148,8 +150,9 @@ a.button.alt {
 }
 
 /* #BUTTONS */
-.button,
-button {
+.button
+button, 
+form input [type=submit] {
     font-size: inherit;
     line-height: 1;
     background-color: rgba(0,0,255,1);
@@ -503,4 +506,43 @@ article p:first-of-type: first-letter {
     padding: .2em .4em;
     margin-right: .3em;
     float: left;
+}
+
+/* FORMS */
+
+form {
+    max-width: 600px;
+    margin: 2em auto;
+}
+
+form label,
+form input,
+form textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    font-size: 1em;
+}
+
+form label {
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+}
+
+form input[type="text"],
+form textarea {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    color: #666;
+}
+
+form textarea {
+    min-height: 10em;
+    line-height: 1.5;
+}
+
+form input [type="submit"] {
+    margin-top: 1.5em;
+    width: auto;
+
 }
