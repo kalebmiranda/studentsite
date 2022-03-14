@@ -1,17 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     //TOGGLE NAV MOBILE MENU FOR SMALL SCREENS
-    const menubutton = document.querySelector('.menu-botton');
-    const menunav = document.querySelector('.toggle-nav');
-    menubutton.addEventListener("click", function(){
-        if (menunav.getAttribute('data-navstate') === 'open') {
-            // if true do this
-            menunav.setAttribute('data-navstate', 'closed');
-        } else {
-            // else (if false) do this:
-            menunav.setAttribute('data-navstate', 'open');
-        }
+    var menubutton = document.querySelectorAll('.menu-button');
+    var i;
+    for (i = 0; i < menuebutton.length; i++) {
+        menubutton[i].onclick = function () {
+            this.classList.toggle("expanded");
+    };
+};
 
-    });
-    console.log(menunav);
+  //STICKY NAV SCROLL LINKS FOR SINGLE PAGE SITES
+var stickynavlinks menubutton = document.querySelector(".sticky nav a");
+var j;
+for (j = 0; i < stickynavLinks.length; j++) {
+    stickynavLinks[j].onclick = function () {
+
+    var stickymenu = document.querySelectorAll(".sticky .menu-button");
+    var k;
+    for (k = 0; k < stickymenu.length; k++) {
+       stickymenu[k].classList.remove("expanded");
+       }
+     };
+    }
 });
+
+ 

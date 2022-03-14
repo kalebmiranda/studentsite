@@ -560,3 +560,35 @@ form input [type="submit"] {
     margin: 0.5em auto;
     border-bottom: 3px solid rgba(0, 0, 0.2);
 }
+
+.site-header.sticky {
+    position: fixed;
+    width: 100%;
+}
+
+.site-footer.sticky {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.site-header.sticky + main {
+    padding-top: 3em;
+}
+
+#about {
+    background: rgba(0,0,0,.05);
+}
+
+#contact {
+    background: rgba(0,0,0,.1);
+}
+
+/* Vertical Media Query add height/padding to bottom of contact section only for lg screens - credit to Romina for this idea */
+
+@media (min-height: 600px) {
+    #contact {
+        padding-bottom: 20em;
+    }
+}

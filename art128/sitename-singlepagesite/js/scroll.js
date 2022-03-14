@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return new RegExp(" " + className + " ").test(" " + elem.className + " ");
     }
     const siteheader = document.querySelector(".site-header");
-    const siteheaderfixed = haveClass(siteheader, "sticky");
+    const siteheadersticky = haveClass(siteheader, "sticky");
     var offset;
-    if (siteheaderfixed) {
+    if (siteheadersticky) {
       offset = document.querySelector(".site-id").offsetHeight + 15;
     } else {
       offset = 0;
