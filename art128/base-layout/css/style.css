@@ -48,6 +48,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin: .5em 0;
+}
 h1 {
     font-size: 3em;
     /* 48px */
@@ -144,21 +145,6 @@ color: white
 }
 
 
-  font-family: Helvetica, Arial, sans-serif;
-  margin: 0.5em 0;
-}
-
-/* Reference
-	62.5%  => 10px
-	68.8%  => 11px
-	75%    => 12px
-	81.3%  => 13px
-	87.5%  => 14px
-	100%   => 16px
-	112.5% => 18px
-	125%   => 20px
-*/
-
 /* LAYOUT */
 
 * { box-sizing: border-box; }
@@ -197,7 +183,7 @@ body { margin: 0; }
     body.demo {
         padding-top: 2em;
     }
-    body.demo:after {
+    body.demo::before {
         content: "Small Screen (Mobile) Less Than 768px";
         background-color: #933;
         width: 100%;
@@ -265,7 +251,7 @@ body { margin: 0; }
         max-width: 21%;
     }
 
-    .row > .column.centured {
+    .row > .column.centered {
         margin-left: auto;
         margin-right: auto;
     }

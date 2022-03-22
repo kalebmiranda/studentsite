@@ -48,6 +48,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin: .5em 0;
+}
 h1 {
     font-size: 3em;
     /* 48px */
@@ -134,27 +135,14 @@ img {
 }
 
 a.button.alt {
-  background-color: transparent;
-  color: #036;
+    background-color: transparent;
+    color: #036;
 }
 
 .button.alt:hover {
-background-color:  rgb(27, 27, 158);
-color: white
+    background-color:  rgb(27, 27, 158);
+    color: white;
 }
 
 
-  font-family: Helvetica, Arial, sans-serif;
-  margin: 0.5em 0;
-}
-
-/* Reference
-	62.5%  => 10px
-	68.8%  => 11px
-	75%    => 12px
-	81.3%  => 13px
-	87.5%  => 14px
-	100%   => 16px
-	112.5% => 18px
-	125%   => 20px
-*/
+  
