@@ -125,6 +125,7 @@ img {
 
 /* #BUTTONS */
 .button {
+    display: inline-block;
     background-color: blue;
     color: white;
     padding: 1em;
@@ -140,6 +141,7 @@ form input [type=submit]:hover {
 }
 
 a.button.alt {
+    border: 1px solid #036;
     background-color: transparent;
     color: #036;
 }
@@ -498,7 +500,7 @@ article p:first-of-type {
 }*/
 
 
-article p:first-of-type: first-letter {
+article p:first-of-type:first-letter {
     font-size: 3em;
     line-height: 1em;
     background: #000;
