@@ -123,42 +123,15 @@ img {
     height: auto;
 }
 
-/* #BUTTONS */
-.button {
-    display: inline-block;
-    background-color: blue;
-    color: white;
-    padding: 1em;
-}
-
-.button:hover,
-a.button:hover,
-form input [type=submit]:hover {
-    background-color: rgb(27, 27, 158);
-    border-color: rgb(27, 27, 158);
-    color: #fff;
-    text-decoration: none;
-}
-
-a.button.alt {
-    border: 1px solid #036;
-    background-color: transparent;
-    color: #036;
-}
-
-.button.alt:hover {
-    background-color: rgb(27, 27, 158);
-    color: white;
-}
 
 /* #BUTTONS */
-.button
-button, 
+.button,
+a.button, 
 form input [type=submit] {
     font-size: inherit;
     line-height: 1;
-    background-color: rgba(0,0,255,1);
-    border: 1px solid rgba(0,0,255,1);
+    background-color: rgb(215, 176, 35);
+    border: 1px solid rgb(215, 176, 35);
     color: rgba(255,255,255,1);
     padding: 1em;
     display:inline-block;
@@ -340,17 +313,7 @@ body.demo:after {
     }
 }
 
-/* STYLING FOR BOTH HEADER AND FOOTER */
-.site-header a,
-.site-footer a {
-    color: rgba(0,0,0,.8);
-}
 
-.site-header a:hover,
-.site-footer a:hover{
-    color: rgba(0,0,0,1);
-    text-decoration: none;
-}
 
 /* LOGO AREA */
 
@@ -375,7 +338,7 @@ body.demo:after {
 }
 
 /* SECTIONS */
-sections {
+section {
     padding: 3em 0;
 }
 
