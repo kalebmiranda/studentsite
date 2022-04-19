@@ -320,6 +320,9 @@ body.demo:after {
 
 /* LOGO AREA */
 
+.site-id{
+    order: 2;
+}
 .site-id h1 {
     font-size: 1.5em;
     margin: 0;
@@ -327,6 +330,9 @@ body.demo:after {
     text-align: center;
 }
 /* SITE NAV */
+.site-nav {
+    order: 1;
+}
 .site-nav ul {
     margin: 0;
     padding: 0;
@@ -533,21 +539,24 @@ form input [type="submit"] {
 }
 .site-header {
     display:flex; 
-    justify-content: space;
+    justify-content: space-between;
 }
 
 .site-header.sticky {
     position: fixed;
     width: 100%;
+    background-color: #fff;
 }
 
 .headercontact {
-    text-align: center;
+    text-align: center; 
+    order: 3;
 }
 .site-footer.sticky {
     position: fixed;
     width: 100%;
     bottom: 0;
+    background-color: #fff;
 }
 
 
