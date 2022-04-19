@@ -408,7 +408,6 @@ sections {
     }
     .toggle-nav .site-nav .menu-button {
         display: block;
-        background: pink;
         display: inline-block;
         cursor: pointer;
         padding: .3em .8em;
@@ -418,6 +417,10 @@ sections {
     }
     .toggle-nav .site-nav .menu-button::selection {
         background-color: rgba(255,255,255,0);
+    }
+    .toggle-nav .site-nav ul {
+        display: block;
+        text-align: center;
     }
 
     .toggle-nav .site-nav a:hover {
@@ -434,11 +437,11 @@ sections {
     }
 
     /* NAVICON */
-    .toggle-nav .site-nav .menubutton.naveicon {
+    .toggle-nav .site-nav .menubutton.navicon {
         border: none;
         color: rgba(255,255,255,0);
     }
-    .toggle-nav .site-nav .menubutton.naveicon::after {
+    .toggle-nav .site-nav .menubutton.navicon::after {
         content: "\2630";
         display: inline-block;
         padding: 0 .4em;
@@ -447,7 +450,7 @@ sections {
         font-size: 1.5em;
     }
 
-    .toggle-nav[data-navstate="open"] .toggle-nav .site-nav .menubutton.naveicon::after {
+    .toggle-nav[data-navstate="open"] .toggle-nav .site-nav .menubutton.navicon::after {
         content: "\2715";
     }
 }
