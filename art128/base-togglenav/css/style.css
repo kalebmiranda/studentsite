@@ -408,6 +408,8 @@ sections {
     .toggle-nav[data-navstate="open"] ul {
         height: auto;
         overflow: visible;
+        display: block;
+        text-align: center;
     }
 
     /* NAVICON */
@@ -424,7 +426,7 @@ sections {
         font-size: 1.5em;
     }
 
-    .toggle-nav[data-navstate="open"] .toggle-nav .site-nav .menu-button.navicon::after {
+    .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
         content: "\2715";
     }
 }
