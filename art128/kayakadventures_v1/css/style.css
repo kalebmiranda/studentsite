@@ -571,3 +571,20 @@ form input [type="submit"] {
     }
 }
 
+/* NAVICON */
+.toggle-nav .site-nav .menu-button.navicon {
+    border: none;
+    color: rgba(255,255,255,0);
+}
+.toggle-nav .site-nav .menu-button.navicon::after {
+    content: "\2630";
+    display: inline-block;
+    padding: 0 .4em;
+    margin: 0;
+    color: rgba(0,0,0,.8);
+    font-size: 1.5em;
+}
+
+.toggle-nav[data-navstate="open"] .toggle-nav .site-nav .menu-button.navicon::after {
+    content: "\2715";
+}
