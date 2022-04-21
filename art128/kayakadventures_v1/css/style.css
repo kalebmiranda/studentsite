@@ -592,7 +592,7 @@ form input [type="submit"] {
 /* NAVICON */
 .toggle-nav .site-nav .menu-button.navicon {
     border: none;
-    color: rgba(255,255,255,0);
+    color: #fff;
 }
 .toggle-nav .site-nav .menu-button.navicon::after {
     content: "\2630";
@@ -610,7 +610,7 @@ form input [type="submit"] {
 /* SOCIAL MEDIA ICON */
 .socialmedia svg{
     width: 40px;
-    background: green;
+    background: light-green;
     height: 40px;
     border-radius: 10%;
 
