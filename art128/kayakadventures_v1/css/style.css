@@ -123,6 +123,13 @@ a:hover {
     margin-right: auto;
 }
 
+.hidden {
+    position:absolute;
+    top: -9999px;
+    left:-9999px;
+}
+
+
 /* IMAGES */
 img {
     max-width: 100%;
@@ -380,15 +387,15 @@ section {
 /* TOGGLE NAV */
 
 .toggle-nav .site-nav .menu-button {
-    display: none;
+    /* display: none; */
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) { */
     .toggle-nav .site-id {
-        position: absolute; 
+        /* position: absolute;  */
     }
     .toggle-nav .site-nav {
-        text-align: right;
+        text-align: left;
     }
     .toggle-nav .site-nav .menu-button {
         display: block;
@@ -436,7 +443,7 @@ section {
     .toggle-nav[data-navstate="open"] .site-nav .menubutton.navicon::after {
         content: "\2715";
     }
-}
+/* } */
 
 /* SUB PAGES */
 
@@ -574,11 +581,11 @@ form input [type="submit"] {
 }
 
 #about {
-    background: rgba(0,0,0,.05);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 #contact {
-    background: rgba(0,0,0,.1);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* Vertical Media Query add height/padding to bottom of contact section only for lg screens - credit to Romina for this idea */
@@ -599,7 +606,7 @@ form input [type="submit"] {
     display: inline-block;
     padding: 0 .4em;
     margin: 0;
-    color: rgba(0,0,0,.8);
+    color: rgba(0, 0, 0, 0.8);
     font-size: 1.5em;
 }
 
@@ -608,10 +615,14 @@ form input [type="submit"] {
 }
 
 /* SOCIAL MEDIA ICON */
+.site-nav .socialmedia {
+    justify-content: flex-end;
+}
 .socialmedia svg{
     width: 40px;
-    background: light-green;
+    background: rgb(63, 158, 107);
     height: 40px;
     border-radius: 10%;
+    fill: white; 
 
 }
