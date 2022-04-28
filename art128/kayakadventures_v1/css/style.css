@@ -57,6 +57,8 @@ h1, h2, h3, h4, h5, h6 {
     hyphens: auto;
 }
 
+    
+
 h1 {
     font-size: 3em;
     /* 48px */
@@ -582,6 +584,11 @@ form input [type="submit"] {
 
 #about {
     background: rgba(255, 255, 255, 0.05);
+    background-image: url('../img/news-rennovation-lg.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 #contact {
@@ -626,3 +633,9 @@ form input [type="submit"] {
     fill: white; 
 
 }
+
+.site-main {
+    padding-bottom: 6em;
+    
+}
+    
