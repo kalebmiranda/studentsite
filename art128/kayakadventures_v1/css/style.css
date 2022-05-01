@@ -584,7 +584,25 @@ form input [type="submit"] {
 
 #about {
     background: rgba(255, 255, 255, 0.05);
-    background-image: url('../img/news-rennovation-lg.jpg');
+    background-image: url('../img/Screen\ Shot\ 2022-04-30\ at\ 8.28.32\ PM.png');
+    background-size: cover;
+    background-position: center bottom;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+#thetour {
+    background: rgba(255, 255, 255, 0.05);
+    background-image: url('../img/Screen\ Shot\ 2022-04-30\ at\ 8.52.43\ PM.png');
+    background-size: cover;
+    background-position: center bottom;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+#reservations {
+    background: rgba(255, 255, 255, 0.05);
+    background-image: url('../img/Screen\ Shot\ 2022-04-30\ at\ 9.24.54\ PM.png');
     background-size: cover;
     background-position: center bottom;
     padding-top: 10vh;
@@ -593,6 +611,11 @@ form input [type="submit"] {
 
 #contact {
     background: rgba(255, 255, 255, 0.1);
+    background-image: url('../img/Screen\ Shot\ 2022-04-30\ at\ 10.00.51\ PM.png');
+    background-size: cover;
+    background-position: center bottom;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 /* Vertical Media Query add height/padding to bottom of contact section only for lg screens - credit to Romina for this idea */
