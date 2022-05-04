@@ -31,10 +31,13 @@
 
 
 /* #TYPOGRAPHY  */
+header {
+    font-family: Capitana;
+}
 
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Azo Sans;
     color: rgb(0, 0, 0);
     font-size: 87.5%; /* 16px = 1em */
     line-height: 1.4;
@@ -145,8 +148,8 @@ a.button,
 form input [type=submit] {
     font-size: inherit;
     line-height: 1;
-    background-color: rgb(215, 176, 35);
-    border: 1px solid rgb(215, 176, 35);
+    background-color: rgb(211, 190, 114);
+    border: 2px solid rgb(211, 190, 114);
     color: rgba(255,255,255,1);
     padding: 1em;
     display:inline-block;
@@ -589,6 +592,7 @@ form input [type="submit"] {
     background-position: center bottom;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    text-align: center;
 }
 
 #thetour {
@@ -665,3 +669,9 @@ form input [type="submit"] {
 .contact .row {
     color: white;
 }
+
+/* RESERVATIONS */
+.reservations .row {
+    color: white;
+}
+
