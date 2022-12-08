@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Framework</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500&family=Exo:wght@700&family=Montserrat+Subrayada&family=Source+Sans+Pro&family=Source+Serif+Pro:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- MAIN CSS STYLES -->
+<link rel="stylesheet" href="css/style.css">
+ 
+</head>
+
+<body>
+
+  <header class="site-header toggle-nav animated sticky">
+    <div class="site-id">
+        <img src="img/palmbalm-logoorange-copy.png" width="60" height="60"
+        alt="Fragrance Logo">   
+        <img src="img/palmbalm-wordlogoorange2.png" width="300" height="300"
+        alt="Fragrance Logo">
+        <h1 class="hide-visually"><a href="index.html">Palmbalm</h1></a>
+    </div>
+    <div class="utility-nav">
+        <img src="img/user-icon.png"
+        width="30" height="30">
+        <img src="img/shoppingcart-icon.png"
+        width="30" height="30">
+    </div>
+  </header>  
+ 
+  <main class="site-main">
+
+    <section class="hero">
+        <div class="container">
+            <a href="#section1" class="button">Go to Section 1</a>
+            <a href="#section2" class="button">Go to Section 2</a>
+            <a href="#section3" class="button">Go to Section 3</a>
+        </div>
+    </section>
+
+    <section id="section1" 
+    data-navstate="active"
+    class="scroll-triggered">
+          <div class="row centured">
+              <div class="jd-contentblock-image">
+                  <img src="img/Blue Triangles.png" alt="Placeholder">
+            </div>
+        </div>
+    </section>
+
+    <section id="section2" data-navstate="active" class="scroll-triggered">
+        <div class="row swapped">
+            <div class="row swapped">
+                <div class="one-half jd-contentblock-image">
+                    <img src="img/skin-shot.png"
+                    alt="Placeholder"> 
+                </div>
+                <div class="one-half jd-contentblock-text"> <p>At Palmbalm our aim is to impart  confidence in you whether you’re out day cruising at the beach or out on a night full of fun and mischief.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <div class="km-centered-quote">
+        <h1>Be at ease of what is on your skin</h1>
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <h2>ABOUT US</h2>
+            <div class="km-image-right">
+                <img src="img/red-flower.png" alt="red flower">
+            </div>
+            <div class="km-text-centered-right">
+                <p>We are a lifestyle fragrance brand based right here in Hawaii.  Our products are 100% alcohol and chemical free and made with natural human-grade pheromones and essential oils deriving straight from flowers and fruit trees from these islands.</p>
+            </div>
+            <div class="km-image-left">
+                <img src="img/white-flower.png" alt="white flower">
+            </div>
+        </div>
+        
+    </section>
+        
+    <div class="km-centered-quote">
+        <h1>Two scents… both beachy & peachy</h1>
+    </div>
+
+    <section id="fragrances">
+        <div class="container">
+            <div class="centered">
+            <h2>FRAGRANCES</h2>
+                <h1>Aura</h1>
+                    <h3>A Pheromone Cologne by Palmbalm</h3>
+                        <p>44 ml - $39.99</p>
+                        <p>The all-natural cologne that will give you the distinct advantage you need to go forth and take charge in any environment.</p>
+                    <div class="km-image-right">
+                            <img src="img/macybottlemockupaura.png" alt="aura">
+                    </div>
+                    <h1>Hera</h1>
+                    <h3>A Pheromone Perfume by Palmbalm</h3>
+                    <p>44 ml - $39.99</p>
+                    <p>The all-natural perfume that will add that extra ounce of sass, touching base whichever environment you find  yourself in.</p>
+                    <div class="km-image-left">
+                            <img src="img/macybottlemockuphera.png" alt="hera">
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <div class="km-centered-quote">
+        <h1>Reach Out To Us!</h1>
+    </div>
+
+    <section id="container">
+
+    </section>
+
+
+</main>
+
+<footer class="site-footer">
+    <img src="img/footer-list.png"
+    <nav class="sitenav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#fragrances">Fragrances</a></li>
+        </ul>
+        <img src="img/facebook-icon.png" width="30" height="30">
+        <img src="img/instagram-icon.png" width="30" height="30">
+    </nav>
+</footer>
+
+<!--SECTION SCROLL BY CHRIS FERDINANDI: https://github.com/cferdinandi/smooth-scroll -->
+<script src="js/smooth-scroll.polyfills.min.js"></script>
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 800,
+        speedAsDuration: true
+    });
+</script>
+
+
+
+
+ 
+
+
+
+   
+    <!-- MAIN JS SCRIPT.JS -->
+    <script src="js/script.js"></script> 
+
+</body>
+
+</html>
